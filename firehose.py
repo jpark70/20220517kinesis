@@ -16,7 +16,7 @@ while True:
         raw_data.update(line)
         data = json.dumps(raw_data)
         response = client.put_record(
-            DeliveryStreamName = 'Source',
+            DeliveryStreamName = 'SourceStream',
             Record = {
                 'Data':data
             }
